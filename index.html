@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Court and Justice website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy UI and tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,16 +21,142 @@
     }
 </style>
 </head>
-
 <body>
-<header>
 
+<header class="container mx-auto mt-4">
+<!-- header part start -->
+<div class="flex flex-col md:flex-row navbar bg-base-100 space-y-3 py-3">
+    <div class="navbar-start">
+      <a class="normal-case text-font-EB-Gaeamond text-xl"><img src="images/logo2.png" alt="logo"></a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 text-poppins text-bese font-normal text-[#707070]">
+        <li><a>Home<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          </a></li>
+        <li><a>Services <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></a></li>
+        <li><a>Cases <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></a></li>
+        <li><a>Blog <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></a></li>
+        <li><a>Contact US <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></a></li>  
+      </ul>
+    </div>
+    <div class="navbar-end ">
+      <a class="text-lg font-semibold text-[#FFF] text-font-popping  bg-[#B68C5A] px-3 py-3 md:px-7 md:py-4 rounded-lg">Free Consultation</a>
+    </div>
+  </div>
+  <!-- navbar part ends -->
+  <!-- banner part start -->
+  <section class="py-5">
+    <div class="hero min-h-screen rounded-xl max-w-full" style="background-image: url(images/banner.png);">
+        <div class="rounded-lg"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <h1 class="mb-5 text-7xl font-extrabold font-EB-Garamond">We Provided Efective <br>Legal Solutions</h1>
+            <p class="mb-5 font-poppins text-xl text-gray-300">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+            <div class="mt-5 md:mt-7 gap-3">
+                <input class="w-96 h-10 px-10 py-4 rounded-lg" type="text" placeholder="Search Your Services">
+                <input class="text-center h-10 w-32 rounded-lg bg-[#B68C5A] text-xl font-semibold text-[#FFF]" type="search" name="" id="" placeholder="search">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- banner part end -->
+<!-- header part end -->
 </header>
-<main>
-
+<main class="container mx-auto">
+    <!-- legal Practice area part start -->
+<section class="container mx-auto py-10">
+<h2 class="text-4xl text-[#414040] font-EB-Garamond font-extrabold text-center mb-5">The Legal Practice Area</h2>
+<p class="text-base text-[#707070] font-normal text-center mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="card w-96 bg-base-100 shadow-xl hover:bg-slate-100 p-12 space-y-5">
+        <figure class="px-10 pt-10">
+          <img src="images/business.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl text-[#414040] font-EB-Garamond font-extrabold">Business Law</h2>
+          <p class="text-base text-[#707070] font-poppins mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="2.5" stroke="currentColor" class="w-8 h-8 bg-[#B68C5A] rounded-full text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg> 
+        </div>
+      </div>
+    <div class="card w-96 bg-base-100 shadow-xl hover:bg-slate-100 p-12 space-y-5">
+        <figure class="px-10 pt-10">
+          <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl text-[#414040] font-EB-Garamond font-extrabold">Criminal Law</h2>
+          <p class="text-base text-[#707070] font-poppins mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="2.5" stroke="currentColor" class="w-8 h-8 bg-[#B68C5A] rounded-full text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg> 
+        </div>
+      </div>
+    <div class="card w-96 bg-base-100 shadow-xl hover:bg-slate-100 p-12 space-y-5">
+        <figure class="px-10 pt-10">
+          <img src="images/child.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl text-[#414040] font-EB-Garamond font-extrabold">Child Support</h2>
+          <p class="text-base text-[#707070] font-poppins mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="2.5" stroke="currentColor" class="w-8 h-8 bg-[#B68C5A] rounded-full text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg> 
+        </div>
+      </div>
+    <div class="card w-96 bg-base-100 shadow-xl hover:bg-slate-100 p-12 space-y-5">
+        <figure class="px-10 pt-10">
+          <img src="images/education.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl text-[#414040] font-EB-Garamond font-extrabold">Education Law</h2>
+          <p class="text-base text-[#707070] font-poppins mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="2.5" stroke="currentColor" class="w-8 h-8 bg-[#B68C5A] rounded-full text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg> 
+        </div>
+      </div>
+    <div class="card w-96 bg-base-100 shadow-xl hover:bg-slate-100 p-12 space-y-5">
+        <figure class="px-10 pt-10">
+          <img src="images/divorce.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl text-[#414040] font-EB-Garamond font-extrabold">Divorce Law</h2>
+          <p class="text-base text-[#707070] font-poppins mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="2.5" stroke="currentColor" class="w-8 h-8 bg-[#B68C5A] rounded-full text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg> 
+        </div>
+      </div>
+    <div class="card w-96 bg-base-100 shadow-xl hover:bg-slate-100 p-12 space-y-5">
+        <figure class="px-10 pt-10">
+          <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-3xl text-[#414040] font-EB-Garamond font-extrabold">Tax Law</h2>
+          <p class="text-base text-[#707070] font-poppins mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="2.5" stroke="currentColor" class="w-8 h-8 bg-[#B68C5A] rounded-full text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg> 
+        </div>
+      </div>
+</div>
+</section>
+<!-- Legal Practice area part end -->
 </main>
 <footer>
-    
+
 </footer>    
 
 
